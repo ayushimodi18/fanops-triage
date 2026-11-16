@@ -1,0 +1,73 @@
+[
+  {
+    "fan_id": "FAN-001",
+    "display_name": "Marcus Webb",
+    "tier": "standard",
+    "lifetime_orders": 3,
+    "lifetime_gmv_usd": 640,
+    "prior_contacts_24h": 0,
+    "prior_contacts_this_order_24h": 0,
+    "preferred_channel": "push"
+  },
+  {
+    "fan_id": "FAN-002",
+    "display_name": "Priya Raman",
+    "tier": "frequent",
+    "lifetime_orders": 11,
+    "lifetime_gmv_usd": 3120,
+    "prior_contacts_24h": 1,
+    "prior_contacts_this_order_24h": 1,
+    "preferred_channel": "email"
+  },
+  {
+    "fan_id": "FAN-003",
+    "display_name": "Dan Kowalczyk",
+    "tier": "standard",
+    "lifetime_orders": 4,
+    "lifetime_gmv_usd": 890,
+    "prior_contacts_24h": 3,
+    "prior_contacts_this_order_24h": 3,
+    "prior_auto_resolutions_this_order": 2,
+    "preferred_channel": "sms"
+  },
+  {
+    "fan_id": "FAN-004",
+    "display_name": "Alicia Thorne",
+    "tier": "new",
+    "lifetime_orders": 0,
+    "lifetime_gmv_usd": 0,
+    "prior_contacts_24h": 0,
+    "prior_contacts_this_order_24h": 0,
+    "preferred_channel": "email"
+  },
+  {
+    "fan_id": "FAN-005",
+    "display_name": "Jordan Reyes",
+    "tier": "vip",
+    "lifetime_orders": 41,
+    "lifetime_gmv_usd": 18400,
+    "prior_contacts_24h": 0,
+    "prior_contacts_this_order_24h": 0,
+    "preferred_channel": "sms"
+  },
+  {
+    "fan_id": "FAN-006",
+    "display_name": "Tomas Ibarra",
+    "tier": "standard",
+    "lifetime_orders": 2,
+    "lifetime_gmv_usd": 310,
+    "prior_contacts_24h": 0,
+    "prior_contacts_this_order_24h": 0,
+    "preferred_channel": "push"
+  },
+  {
+    "fan_id": "FAN-007",
+    "display_name": "Nina Achebe",
+    "tier": "frequent",
+    "lifetime_orders": 8,
+    "lifetime_gmv_usd": 2100,
+    "prior_contacts_24h": 0,
+    "prior_contacts_this_order_24h": 0,
+    "preferred_channel": "push"
+  }
+]

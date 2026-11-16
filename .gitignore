@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+outputs/*.jsonl
+.DS_Store
+outputs/.events_snapshot.json
+.pytest_cache/
+.env
+.env.*
+!.env.example

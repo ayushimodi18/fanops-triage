@@ -1,0 +1,63 @@
+[
+  {
+    "event_id": "EVT-1001",
+    "name": "Warriors vs Lakers",
+    "venue": "Chase Center",
+    "city": "San Francisco",
+    "timezone": "America/Los_Angeles",
+    "starts_at": "2026-11-16T05:54:23.763956+00:00",
+    "doors_open_at": "2026-11-16T04:39:23.763956+00:00",
+    "last_entry_at": "2026-11-16T06:54:23.763956+00:00",
+    "status": "on_time",
+    "refund_window_open": false
+  },
+  {
+    "event_id": "EVT-1002",
+    "name": "Hozier \u2014 Unreal Unearth Tour",
+    "venue": "The Greek Theatre",
+    "city": "Berkeley",
+    "timezone": "America/Los_Angeles",
+    "starts_at": "2026-11-16T11:09:23.763956+00:00",
+    "doors_open_at": "2026-11-16T10:09:23.763956+00:00",
+    "last_entry_at": "2026-11-16T12:39:23.763956+00:00",
+    "status": "on_time",
+    "refund_window_open": false
+  },
+  {
+    "event_id": "EVT-1003",
+    "name": "Giants vs Padres",
+    "venue": "Oracle Park",
+    "city": "San Francisco",
+    "timezone": "America/Los_Angeles",
+    "starts_at": "2026-11-16T08:09:23.763956+00:00",
+    "doors_open_at": "2026-11-16T07:09:23.763956+00:00",
+    "last_entry_at": "2026-11-16T10:09:23.763956+00:00",
+    "status": "on_time",
+    "refund_window_open": false
+  },
+  {
+    "event_id": "EVT-1004",
+    "name": "John Mulaney \u2014 Live",
+    "venue": "The Masonic",
+    "city": "San Francisco",
+    "timezone": "America/Los_Angeles",
+    "starts_at": "2026-11-17T11:09:23.763956+00:00",
+    "doors_open_at": "2026-11-17T10:09:23.763956+00:00",
+    "last_entry_at": "2026-11-17T12:09:23.763956+00:00",
+    "status": "on_time",
+    "refund_window_open": false
+  },
+  {
+    "event_id": "EVT-1005",
+    "name": "Sharks vs Kings",
+    "venue": "SAP Center",
+    "city": "San Jose",
+    "timezone": "America/Los_Angeles",
+    "starts_at": "2026-11-17T01:09:23.763956+00:00",
+    "doors_open_at": "2026-11-17T00:09:23.763956+00:00",
+    "last_entry_at": "2026-11-17T02:09:23.763956+00:00",
+    "status": "cancelled",
+    "status_note": "Cancelled by the venue due to an arena systems failure.",
+    "refund_window_open": true
+  }
+]

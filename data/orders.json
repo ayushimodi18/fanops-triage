@@ -1,0 +1,406 @@
+[
+  {
+    "order_id": "ORD-5001",
+    "fan_id": "FAN-001",
+    "event_id": "EVT-1001",
+    "purchased_at": "2026-11-14T05:09:23.763956+00:00",
+    "order_total_usd": 184.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "212-8-1",
+        "section": "212",
+        "row": "8",
+        "seat": "1",
+        "status": "not_delivered",
+        "face_value_usd": 92.0
+      },
+      {
+        "seat_id": "212-8-2",
+        "section": "212",
+        "row": "8",
+        "seat": "2",
+        "status": "not_delivered",
+        "face_value_usd": 92.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "not_delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-77",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5002",
+    "fan_id": "FAN-002",
+    "event_id": "EVT-1002",
+    "purchased_at": "2026-11-11T05:09:23.763956+00:00",
+    "order_total_usd": 476.0,
+    "quantity": 4,
+    "seats": [
+      {
+        "seat_id": "GA-B-\u2014-1",
+        "section": "GA-B",
+        "row": "\u2014",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 119.0
+      },
+      {
+        "seat_id": "GA-B-\u2014-2",
+        "section": "GA-B",
+        "row": "\u2014",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 119.0
+      },
+      {
+        "seat_id": "GA-B-\u2014-3",
+        "section": "GA-B",
+        "row": "\u2014",
+        "seat": "3",
+        "status": "pending_transfer",
+        "face_value_usd": 119.0
+      },
+      {
+        "seat_id": "GA-B-\u2014-4",
+        "section": "GA-B",
+        "row": "\u2014",
+        "seat": "4",
+        "status": "pending_transfer",
+        "face_value_usd": 119.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "partially_delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-91",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5003",
+    "fan_id": "FAN-003",
+    "event_id": "EVT-1003",
+    "purchased_at": "2026-11-13T05:09:23.763956+00:00",
+    "order_total_usd": 214.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "118-22-1",
+        "section": "118",
+        "row": "22",
+        "seat": "1",
+        "status": "not_delivered",
+        "face_value_usd": 107.0
+      },
+      {
+        "seat_id": "118-22-2",
+        "section": "118",
+        "row": "22",
+        "seat": "2",
+        "status": "not_delivered",
+        "face_value_usd": 107.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "not_delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-12",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5004",
+    "fan_id": "FAN-004",
+    "event_id": "EVT-1002",
+    "purchased_at": "2026-11-16T02:09:23.763956+00:00",
+    "order_total_usd": 1240.0,
+    "quantity": 4,
+    "seats": [
+      {
+        "seat_id": "PIT-A-1",
+        "section": "PIT",
+        "row": "A",
+        "seat": "1",
+        "status": "not_delivered",
+        "face_value_usd": 310.0
+      },
+      {
+        "seat_id": "PIT-A-2",
+        "section": "PIT",
+        "row": "A",
+        "seat": "2",
+        "status": "not_delivered",
+        "face_value_usd": 310.0
+      },
+      {
+        "seat_id": "PIT-A-3",
+        "section": "PIT",
+        "row": "A",
+        "seat": "3",
+        "status": "not_delivered",
+        "face_value_usd": 310.0
+      },
+      {
+        "seat_id": "PIT-A-4",
+        "section": "PIT",
+        "row": "A",
+        "seat": "4",
+        "status": "not_delivered",
+        "face_value_usd": 310.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "not_delivered",
+    "fraud_status": "under_review",
+    "seller_id": "SEL-04",
+    "payment_settled": false
+  },
+  {
+    "order_id": "ORD-5005",
+    "fan_id": "FAN-006",
+    "event_id": "EVT-1001",
+    "purchased_at": "2026-11-09T05:09:23.763956+00:00",
+    "order_total_usd": 156.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "224-14-1",
+        "section": "224",
+        "row": "14",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 78.0
+      },
+      {
+        "seat_id": "224-14-2",
+        "section": "224",
+        "row": "14",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 78.0
+      }
+    ],
+    "delivery_method": "in_app",
+    "ticket_status": "delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-33",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5006",
+    "fan_id": "FAN-007",
+    "event_id": "EVT-1003",
+    "purchased_at": "2026-11-02T05:09:23.763956+00:00",
+    "order_total_usd": 298.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "204-5-1",
+        "section": "204",
+        "row": "5",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 149.0
+      },
+      {
+        "seat_id": "204-5-2",
+        "section": "204",
+        "row": "5",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 149.0
+      }
+    ],
+    "delivery_method": "in_app",
+    "ticket_status": "delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-51",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5007",
+    "fan_id": "FAN-001",
+    "event_id": "EVT-1004",
+    "purchased_at": "2026-11-15T05:09:23.763956+00:00",
+    "order_total_usd": 118.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "ORCH-M-1",
+        "section": "ORCH",
+        "row": "M",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 59.0
+      },
+      {
+        "seat_id": "ORCH-M-2",
+        "section": "ORCH",
+        "row": "M",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 59.0
+      }
+    ],
+    "delivery_method": "in_app",
+    "ticket_status": "delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-19",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5008",
+    "fan_id": "FAN-007",
+    "event_id": "EVT-1002",
+    "purchased_at": "2026-11-12T05:09:23.763956+00:00",
+    "order_total_usd": 238.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "TERR-C-1",
+        "section": "TERR",
+        "row": "C",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 119.0
+      },
+      {
+        "seat_id": "TERR-C-2",
+        "section": "TERR",
+        "row": "C",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 119.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-62",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5009",
+    "fan_id": "FAN-005",
+    "event_id": "EVT-1001",
+    "purchased_at": "2026-11-15T19:09:23.763956+00:00",
+    "order_total_usd": 720.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "CRT-1-1",
+        "section": "CRT",
+        "row": "1",
+        "seat": "1",
+        "status": "pending_transfer",
+        "face_value_usd": 360.0
+      },
+      {
+        "seat_id": "CRT-1-2",
+        "section": "CRT",
+        "row": "1",
+        "seat": "2",
+        "status": "pending_transfer",
+        "face_value_usd": 360.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "pending_transfer",
+    "fraud_status": "clear",
+    "seller_id": "SEL-88",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5011",
+    "fan_id": "FAN-006",
+    "event_id": "EVT-1002",
+    "purchased_at": "2026-11-14T03:09:23.763956+00:00",
+    "order_total_usd": 142.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "LAWN-\u2014-1",
+        "section": "LAWN",
+        "row": "\u2014",
+        "seat": "1",
+        "status": "not_delivered",
+        "face_value_usd": 71.0
+      },
+      {
+        "seat_id": "LAWN-\u2014-2",
+        "section": "LAWN",
+        "row": "\u2014",
+        "seat": "2",
+        "status": "not_delivered",
+        "face_value_usd": 71.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "not_delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-21",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5012",
+    "fan_id": "FAN-001",
+    "event_id": "EVT-1004",
+    "purchased_at": "2026-11-15T13:09:23.763956+00:00",
+    "order_total_usd": 96.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "BALC-F-1",
+        "section": "BALC",
+        "row": "F",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 48.0
+      },
+      {
+        "seat_id": "BALC-F-2",
+        "section": "BALC",
+        "row": "F",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 48.0
+      }
+    ],
+    "delivery_method": "mobile_transfer",
+    "ticket_status": "delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-08",
+    "payment_settled": true
+  },
+  {
+    "order_id": "ORD-5010",
+    "fan_id": "FAN-002",
+    "event_id": "EVT-1005",
+    "purchased_at": "2026-11-10T05:09:23.763956+00:00",
+    "order_total_usd": 264.0,
+    "quantity": 2,
+    "seats": [
+      {
+        "seat_id": "116-9-1",
+        "section": "116",
+        "row": "9",
+        "seat": "1",
+        "status": "delivered",
+        "face_value_usd": 132.0
+      },
+      {
+        "seat_id": "116-9-2",
+        "section": "116",
+        "row": "9",
+        "seat": "2",
+        "status": "delivered",
+        "face_value_usd": 132.0
+      }
+    ],
+    "delivery_method": "in_app",
+    "ticket_status": "delivered",
+    "fraud_status": "clear",
+    "seller_id": "SEL-40",
+    "payment_settled": true
+  }
+]

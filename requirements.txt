@@ -1,0 +1,9 @@
+pydantic>=2.0
+
+# Streamlit console (`streamlit run app.py`)
+streamlit>=1.30
+pandas>=2.0
+
+# No LLM SDK: src/llm.py talks to Anthropic or any OpenAI-compatible endpoint
+# over urllib, and falls back to deterministic classification and raw templates
+# when nothing is configured. See .env.example.

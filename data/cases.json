@@ -1,0 +1,125 @@
+[
+  {
+    "case_id": "CASE-001",
+    "label": "Delivery failure, 45 min to tip-off",
+    "report": {
+      "case_id": "CASE-001",
+      "order_id": "ORD-5001",
+      "channel": "app_chat",
+      "raw_text": "I have nothing in the app for tonight and we're already parked. No barcode, nothing. Tickets are gone.",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-002",
+    "label": "Partial delivery, 4 seats, 6h runway",
+    "report": {
+      "case_id": "CASE-002",
+      "order_id": "ORD-5002",
+      "channel": "email",
+      "raw_text": "Only 2 of the 4 tickets showed up in my account. My brother and his wife have nothing. Can you sort this before tonight?",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-003",
+    "label": "Third contact today, same order",
+    "report": {
+      "case_id": "CASE-003",
+      "order_id": "ORD-5003",
+      "channel": "sms",
+      "raw_text": "This is the third time I'm messaging. You keep saying the tickets are reissued and I still can't find my tickets anywhere.",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-004",
+    "label": "High-value order under fraud review",
+    "report": {
+      "case_id": "CASE-004",
+      "order_id": "ORD-5004",
+      "channel": "email",
+      "raw_text": "I bought 4 pit tickets this morning and they still haven't come through. It's a lot of money, please confirm they're real.",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-005",
+    "label": "Scan failure at the gate",
+    "report": {
+      "case_id": "CASE-005",
+      "order_id": "ORD-5005",
+      "channel": "app_chat",
+      "raw_text": "We're at the gate and the scanner won't take either ticket, it just shows a red X. Staff told us to contact you.",
+      "received_at": "2026-11-16T05:09:23.763956+00:00",
+      "at_venue": true
+    }
+  },
+  {
+    "case_id": "CASE-007",
+    "label": "Ambiguous free text",
+    "report": {
+      "case_id": "CASE-007",
+      "order_id": "ORD-5007",
+      "channel": "app_chat",
+      "raw_text": "hey so about my order for saturday \u2014 something seems off with it, can someone check?",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-008",
+    "label": "Backend delivered, fan can't see tickets",
+    "report": {
+      "case_id": "CASE-008",
+      "order_id": "ORD-5008",
+      "channel": "app_chat",
+      "raw_text": "I don't see my tickets in the app for tonight's show. My friend got hers fine.",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-009",
+    "label": "VIP, seller transfer stuck, 45 min out",
+    "report": {
+      "case_id": "CASE-009",
+      "order_id": "ORD-5009",
+      "channel": "sms",
+      "raw_text": "The seller hasn't sent the courtside tickets yet and the game starts in under an hour. What's happening?",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-011",
+    "label": "Routine delivery failure, 6h runway",
+    "report": {
+      "case_id": "CASE-011",
+      "order_id": "ORD-5011",
+      "channel": "app_chat",
+      "raw_text": "I haven't received my tickets for tonight yet, nothing in my wallet.",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-012",
+    "label": "Routine transfer confusion, 30h out",
+    "report": {
+      "case_id": "CASE-012",
+      "order_id": "ORD-5012",
+      "channel": "email",
+      "raw_text": "I can't find my ticket for the Mulaney show, is something wrong with my order?",
+      "received_at": "2026-11-16T05:09:23.763956+00:00"
+    }
+  },
+  {
+    "case_id": "CASE-010",
+    "label": "Cancelled event",
+    "report": {
+      "case_id": "CASE-010",
+      "order_id": "ORD-5010",
+      "channel": "app_chat",
+      "raw_text": "I just saw the game is called off. What happens to my money?",
+      "received_at": "2026-11-16T05:09:23.763956+00:00",
+      "explicit_refund_request": true
+    }
+  }
+]
