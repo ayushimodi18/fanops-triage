@@ -169,7 +169,9 @@ cases.
 
 ## Console
 
-`streamlit run app.py`. Screenshots in [docs/screenshots/](docs/screenshots/).
+`streamlit run app.py`. The console keeps its own sample dataset in
+`outputs/live_data/` and regenerates it when it is over an hour old, so event
+times stay meaningful on a long-running deployment; `data/` is left alone. Screenshots in [docs/screenshots/](docs/screenshots/).
 
 - Queue sorts escalations first, then by SLA.
 - Each decision shows action, rule id, confidence, guards and reasoning;

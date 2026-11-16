@@ -7,3 +7,4 @@ outputs/.events_snapshot.json
 .env
 .env.*
 !.env.example
+outputs/live_data/

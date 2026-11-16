@@ -1,4 +1,6 @@
 pydantic>=2.0
+# IANA timezones for venue-local times on hosts without system tz data
+tzdata
 
 # Streamlit console (`streamlit run app.py`)
 streamlit>=1.30

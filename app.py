@@ -14,6 +14,7 @@ sent to a ticketing, payment or messaging system.
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -112,27 +113,51 @@ TONE = {
 }
 
 
+# The sample data is anchored to the time it was seeded ("tip-off in 45
+# minutes"), so a long-running console drifts out of its intended time
+# buckets. The console therefore works from its own dataset, regenerated
+# whenever it is older than DATA_MAX_AGE. data/ (used by the CLI and the
+# tests) is never touched.
+LIVE_DIR = ROOT / "outputs" / "live_data"
+ANCHOR = LIVE_DIR / ".anchor"
+DATA_MAX_AGE = timedelta(minutes=60)
+
+
+def ensure_fresh_data() -> str:
+    """Return the anchor of a dataset no older than DATA_MAX_AGE."""
+    try:
+        anchor = ANCHOR.read_text().strip()
+        if datetime.now(timezone.utc) - datetime.fromisoformat(anchor) < DATA_MAX_AGE:
+            return anchor
+    except (OSError, ValueError):
+        pass
+    subprocess.run([sys.executable, str(ROOT / "data" / "seed.py"), "--out", str(LIVE_DIR)],
+                   check=True, capture_output=True)
+    return ANCHOR.read_text().strip()
+
+
 @st.cache_resource
-def get_engine() -> TriageEngine:
+def get_engine(anchor: str) -> TriageEngine:
+    # Keyed on the anchor, so a regenerated dataset gets a fresh engine.
     return TriageEngine(
-        events_path=ROOT / "data" / "events.json",
-        orders_path=ROOT / "data" / "orders.json",
-        fans_path=ROOT / "data" / "fans.json",
+        events_path=LIVE_DIR / "events.json",
+        orders_path=LIVE_DIR / "orders.json",
+        fans_path=LIVE_DIR / "fans.json",
         audit_path=ROOT / "outputs" / "audit_log.jsonl",
         use_llm=True,
     )
 
 
 def load_raw_cases() -> list[dict]:
-    return json.loads((ROOT / "data" / "cases.json").read_text())
+    return json.loads((LIVE_DIR / "cases.json").read_text())
 
 
-EVENTS_PATH = ROOT / "data" / "events.json"
+EVENTS_PATH = LIVE_DIR / "events.json"
 FEED_SNAPSHOT = ROOT / "outputs" / ".events_snapshot.json"
 
 
 @st.cache_resource
-def snapshot_feed() -> str:
+def snapshot_feed(anchor: str) -> str:
     """The postpone control writes to the venue feed; snapshot it on first
     load so "Reset venue feed" can undo that."""
     FEED_SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
@@ -141,8 +166,15 @@ def snapshot_feed() -> str:
     return original
 
 
-engine = get_engine()
-snapshot_feed()
+anchor = ensure_fresh_data()
+engine = get_engine(anchor)
+snapshot_feed(anchor)
+
+# A regenerated dataset invalidates this session's triaged queue.
+if st.session_state.get("anchor") != anchor:
+    for k in list(st.session_state.keys()):
+        del st.session_state[k]
+    st.session_state.anchor = anchor
 
 if "decisions" not in st.session_state:
     st.session_state.decisions = {}

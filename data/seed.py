@@ -289,14 +289,21 @@ CASES = [
 ]
 
 
-def main():
-    (HERE / "events.json").write_text(json.dumps(EVENTS, indent=2))
-    (HERE / "orders.json").write_text(json.dumps(ORDERS, indent=2))
-    (HERE / "fans.json").write_text(json.dumps(FANS, indent=2))
-    (HERE / "cases.json").write_text(json.dumps(CASES, indent=2))
+def main(out: Path = HERE):
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "events.json").write_text(json.dumps(EVENTS, indent=2))
+    (out / "orders.json").write_text(json.dumps(ORDERS, indent=2))
+    (out / "fans.json").write_text(json.dumps(FANS, indent=2))
+    (out / "cases.json").write_text(json.dumps(CASES, indent=2))
+    # Written last, so a reader that sees it knows the four files are complete.
+    (out / ".anchor").write_text(iso(NOW))
     print(f"Seeded {len(EVENTS)} events, {len(ORDERS)} orders, "
           f"{len(FANS)} fans, {len(CASES)} cases  (anchor: {NOW:%Y-%m-%d %H:%M UTC})")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", type=Path, default=HERE,
+                    help="directory to write the dataset to (default: data/)")
+    main(ap.parse_args().out)
